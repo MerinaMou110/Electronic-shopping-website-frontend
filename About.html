@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Shopping Page</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+        rel="stylesheet"
+        type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="font-sans bg-gray-50">
+    
+    
+    <nav class="bg-white border-gray-200 py-5 dark:bg-gray-900 sticky top-0 z-50">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <a href="index.html" class="flex items-center">
+               
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EasyShopping</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+                <a href=""
+                    class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Profile</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="About.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About US</a>
+                    </li>
+                    <li>
+                        <a href="features.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                    <li>
+                        <a href="signup.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Signup</a>
+                    </li>
+                    <li>
+                        <a href="login.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- About Us Section -->
+<section id="about" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2">
+                <img src="images/About us page-rafiki.png" alt="About Us" class="rounded-lg shadow-lg">
+            </div>
+            <div class="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0">
+                <h2 class="text-4xl font-bold text-blue-700 mb-6">About Us</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Welcome to <span class="font-semibold">EasyShopping</span>! We are dedicated to providing the best services in our industry. Our team is passionate about what we do and committed to delivering top-notch solutions to our clients.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our mission is to create value and make a difference through our innovative approaches and dedicated service. We believe in continuous improvement and always strive to exceed our customers' expectations.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Thank you for choosing <span class="font-semibold">EasyShopping</span>. We look forward to working with you and achieving great success together.
+                </p>
+            </div>
+        </div>
+        <!-- New Additions -->
+       <!-- New Additions -->
+       <div class="mt-12 lg:mt-16">
+        <h3 class="text-3xl font-bold text-blue-700 mb-6">Our Values</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="images/Software integration-rafiki.png" alt="Innovation" class="h-12 w-12">
+                </div>
+                <h4 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Integrity</h4>
+                <p class="text-gray-700 text-center">We uphold the highest standards of integrity in all of our actions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="images/Progress overview-rafiki.png" alt="Innovation" class="h-12 w-12">
+                </div>
+                <h4 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Innovation</h4>
+                <p class="text-gray-700 text-center">We constantly seek innovative ways to improve our services and products.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="ex.jpg" alt="Excellence" class="h-12 w-12">
+                </div>
+                <h4 class="text-2xl font-semibold text-gray-900 mb-2 text-center">Excellence</h4>
+                <p class="text-gray-700 text-center">We strive for excellence in everything we do to exceed customer expectations.</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Testimonials -->
+        <div class="mt-16">
+            <h3 class="text-3xl font-bold text-blue-700 mb-6">Testimonials</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">"BrandName has been an incredible partner in our business growth. Their dedication and expertise are unmatched."</p>
+                    <div class="flex items-center">
+                        <img src="images/p1.jpg" alt="User Testimonial" class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Jane Doe</h4>
+                            <p class="text-gray-500">CEO, CompanyXYZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">"The team's innovative solutions have transformed our operations, making us more efficient and effective."</p>
+                    <div class="flex items-center">
+                        <img src="images/p2.jpg" alt="User Testimonial" class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">John Smith</h4>
+                            <p class="text-gray-500">CTO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Team -->
+        <div class="mt-16">
+            <h3 class="text-3xl font-bold text-blue-700 mb-6">Meet Our Team</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/p3.jpg" alt="Team Member" class="h-48 w-full object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-900 text-lg">Alice Johnson</h4>
+                        <p class="text-gray-500">Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/p1.jpg" alt="Team Member" class="h-48 w-full object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-900 text-lg">Bob Williams</h4>
+                        <p class="text-gray-500">Chief Technology Officer</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/p2.jpg" alt="Team Member" class="h-48 w-full object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-900 text-lg">Carol Smith</h4>
+                        <p class="text-gray-500">Chief Marketing Officer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About Us</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class=" hover:underline">Our Story</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Press Center</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Support</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Customer Service</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">FAQs</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Shipping & Returns</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Terms of Service</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Return Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Explore</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class=" hover:underline">New Arrivals</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Best Sellers</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Special Offers</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Gift Cards</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download Our App</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">iOS</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Android</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Windows</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">MacOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="text-center">
+            <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+                <!-- <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="EasyShopping Logo" /> -->
+                EasyShopping   
+            </a>
+            <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2021-2022 EasyShopping™. All Rights Reserved. Built with  <a href="https://tailwindcss.com" class="text-purple-600 hover:underline dark:text-purple-500">Tailwind CSS</a>
+            </span>
+            <ul class="flex justify-center mt-5 space-x-5">
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.299.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.467.398.8.748 1.15.35.35.683.566 1.15.748.353.137.882.299 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.299-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.1 3.1 0 00-.748-1.15 3.1 3.1 0 00-1.15-.748c-.353-.137-.882-.299-1.857-.344-1.023-.047-1.351-.058-3.807-.058h-.468zM12 5.842a6.158 6.158 0 100 12.316 6.158 6.158 0 000-12.316zm0 1.802a4.356 4.356 0 110 8.712 4.356 4.356 0 010-8.712zm5.883-.96a1.44 1.44 0 11-2.881 0 1.44 1.44 0 012.881 0z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">Instagram page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.04c5.509 0 9.96 4.452 9.96 9.96 0 4.961-3.63 9.056-8.438 9.877-.62.113-.846-.27-.846-.598v-2.09c3.45.75 4.17-1.658 4.17-1.658.564-1.435 1.376-1.818 1.376-1.818 1.126-.77-.084-.754-.084-.754-1.247.088-1.903 1.281-1.903 1.281-1.107 1.897-2.905 1.348-3.614 1.03-.113-.804-.433-1.35-.788-1.66 2.74-.31 5.622-1.37 5.622-6.098 0-1.348-.479-2.448-1.268-3.31.125-.31.55-1.56-.125-3.26 0 0-1.03-.33-3.38 1.26a11.85 11.85 0 00-6.156 0C6.07 4.423 5.04 4.753 5.04 4.753c-.674 1.7-.25 2.95-.125 3.26-.79.862-1.268 1.962-1.268 3.31 0 4.74 2.88 5.79 5.625 6.096-.426.37-.813 1.084-.813 2.19v3.256c0 .332-.224.718-.845.598A9.97 9.97 0 012 12c0-5.509 4.451-9.96 9.96-9.96z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M8.29 20.25c0 .398-.323.721-.721.721h-2.45a.724.724 0 01-.721-.721v-8.66c0-.398.323-.721.721-.721h2.45c.398 0 .721.323.721.721v8.66zm-1.946-9.929a1.715 1.715 0 110-3.43 1.715 1.715 0 010 3.43zm14.172 9.929c0 .398-.323.721-.721.721h-2.451a.724.724 0 01-.721-.721v-4.35c0-1.036-.372-1.744-1.304-1.744-.71 0-1.135.478-1.321.94-.069.167-.086.4-.086.635v4.52c0 .398-.323.721-.721.721h-2.45a.724.724 0 01-.721-.721v-8.66c0-.398.323-.721.721-.721h2.45c.398 0 .72.323.721.721v.974c.313-.48.865-1.159 2.104-1.159 1.535 0 2.688.998 2.688 3.145v5.7zm-8.166-18c-5.509 0-9.96 4.451-9.96 9.96s4.451 9.96 9.96 9.96 9.96-4.451 9.96-9.96-4.451-9.96-9.96-9.96z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">LinkedIn page</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+   
+    <script src="script.js"></script>
+
+    </body>
+    </html>

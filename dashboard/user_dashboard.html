@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-100">
+    <div class="flex h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <div id="sidebar" class="hidden md:flex flex-col w-64 bg-gray-800">
+            <div class="flex items-center justify-center h-16 bg-gray-900">
+                <span class="text-white font-bold uppercase">EasyShopping</span>
+            </div>
+            <div class="flex flex-col flex-1 overflow-y-auto">
+                <nav class="flex-1 px-2 py-4 bg-gray-800">
+                    <a href="../index.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 0 0-.832.445l-6 8A1 1 0 0 0 4 12h2v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h2a1 1 0 0 0 .832-1.555l-6-8A1 1 0 0 0 10 2z"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Home</span>
+                    </a>
+                    <a href="../dashboard/user_dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        Dashboard
+                    </a>
+                   
+                    <a href="../products/products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                            <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                    </a>
+                    <a href="../order_list/order_list.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 3a1 1 0 0 0 0 2h12a1 1 0 1 0 0-2H4Z"/>
+                            <path fill-rule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm11 2H6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Order List</span>
+                    </a>
+                    <a href="../changepass.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 3a3 3 0 0 1 5.25-2h4.5A3.25 3.25 0 0 1 18 4.25v11.5A3.25 3.25 0 0 1 14.75 19h-9.5A3.25 3.25 0 0 1 2 15.75v-10.5A3.25 3.25 0 0 1 5.25 2h4.5A2.99 2.99 0 0 1 5 3zm0 2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H5z"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Change Password</span>
+                    </a>
+                    <a href="../login.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                    </a>
+                       
+                    <a href="../signup.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                            <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                            <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                    </a>
+                    <a href="#" id="logout-btn" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700" onclick="logout()">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9 4.75a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-5a.75.75 0 0 1-.75-.75v-3.25a.75.75 0 0 0-1.5 0v3.25A2.25 2.25 0 0 0 9.75 18h5A2.25 2.25 0 0 0 17 15.75V4.25A2.25 2.25 0 0 0 14.75 2h-5A2.25 2.25 0 0 0 7 4.25v3.25a.75.75 0 0 0 1.5 0V4.75Z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M4.47 8.47a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.75.75 0 0 1-1.06-1.06L5.94 11.5 4.47 10.03a.75.75 0 0 1 0-1.06ZM11.75 10a.75.75 0 0 1-.75-.75V8a.75.75 0 0 1 1.5 0v1.25A.75.75 0 0 1 11.75 10Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Logout</span>
+                    </a>
+                     
+                </nav>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="md:hidden">
+            <nav class="bg-gray-800 p-4">
+                <button id="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 bg-gray-800 w-64 h-screen z-50">
+            <div class="flex items-center justify-center h-16 bg-gray-900">
+                <span class="text-white font-bold uppercase">Sidebar</span>
+            </div>
+            <div class="flex flex-col flex-1 overflow-y-auto">
+                <nav class="flex-1 px-2 py-4 bg-gray-800">
+                    <a href="../index.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 0 0-.832.445l-6 8A1 1 0 0 0 4 12h2v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h2a1 1 0 0 0 .832-1.555l-6-8A1 1 0 0 0 10 2z"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Home</span>
+                    </a>
+                    <a href="../dashboard/user_dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700" onclick="toggleMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        Dashboard
+                    </a>
+                    
+                    
+                    <a href="../products/products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                            <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                    </a>
+                    <a href="../order_list/order_list.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 3a1 1 0 0 0 0 2h12a1 1 0 1 0 0-2H4Z"/>
+                            <path fill-rule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm11 2H6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Order List</span>
+                    </a>
+                    <a href="../changepass.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 3a3 3 0 0 1 5.25-2h4.5A3.25 3.25 0 0 1 18 4.25v11.5A3.25 3.25 0 0 1 14.75 19h-9.5A3.25 3.25 0 0 1 2 15.75v-10.5A3.25 3.25 0 0 1 5.25 2h4.5A2.99 2.99 0 0 1 5 3zm0 2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H5z"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Change Password</span>
+                    </a>
+                    <a href="../signup.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                    </a>
+                       
+                    <a href="../login.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                            <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                            <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+                         </svg>
+                         <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                    </a>
+                    <a href="#" id="logout-btn" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700" onclick="logout()">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9 4.75a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-5a.75.75 0 0 1-.75-.75v-3.25a.75.75 0 0 0-1.5 0v3.25A2.25 2.25 0 0 0 9.75 18h5A2.25 2.25 0 0 0 17 15.75V4.25A2.25 2.25 0 0 0 14.75 2h-5A2.25 2.25 0 0 0 7 4.25v3.25a.75.75 0 0 0 1.5 0V4.75Z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M4.47 8.47a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.75.75 0 0 1-1.06-1.06L5.94 11.5 4.47 10.03a.75.75 0 0 1 0-1.06ZM11.75 10a.75.75 0 0 1-.75-.75V8a.75.75 0 0 1 1.5 0v1.25A.75.75 0 0 1 11.75 10Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Logout</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex flex-col flex-1 overflow-y-auto">
+            <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+                <div class="flex items-center px-4">
+                    <input class="mx-4 w-full border rounded-md px-4 py-2" type="text" placeholder="Search">
+                </div>
+                <div class="flex items-center pr-4">
+                    <button class="flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l-7-7 7-7m5 14l7-7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-4">
+                <h1 class="text-2xl font-bold text-center">Welcome to User dashboard!</h1>
+                
+            </div>
+                <!-- Profile Form -->
+                <div class="min-h-screen flex items-center justify-center">
+                    <div class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-extrabold text-gray-900 text-center">Profile</h2>
+                        <form id="profile-form" class="mt-8 space-y-6">
+                            <div class="rounded-md shadow-sm space-y-4">
+                                <div>
+                                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                                    <input id="username" name="username" type="text" required
+                                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-white"
+                                        placeholder="Username">
+                                </div>
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                    <input id="first-name" name="first-name" type="text" required
+                                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-white"
+                                        placeholder="First Name">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                    <input id="last-name" name="last-name" type="text" required
+                                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-white"
+                                        placeholder="Last Name">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                    <input id="email" name="email" type="email" required
+                                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-white"
+                                        placeholder="Email">
+                                </div>
+                                
+                            </div>
+                            <div class="mt-6">
+                                <button onclick="handleProfileUpdate(event)" type="submit"
+                                    class="btn btn-primary w-100 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Update Profile
+                                </button>
+                            </div>
+                            <div id="message" class="mt-4 text-center"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../dashboard/user_dashboard.js"></script>
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.getElementById('menu-btn').addEventListener('click', toggleMenu);
+    </script>
+        </div>
+
+        
+    </div>
+    
+
+  
+</body>
+
+</html>

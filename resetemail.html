@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mt-8 mb-6 text-center">Reset Password</h2>
+            <form id="reset-password-email-form" class="space-y-4" onsubmit="handleResetPasswordEmail(event)">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input id="email" name="email" type="email" required
+                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-white">
+                </div>
+                <button type="submit"
+                    class="w-full bg-purple-700 text-white py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+    <!-- Message Card -->
+    <div id="message-card" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div id="message" class="mb-4"></div>
+            <button onclick="dismissMessageCard()"
+                class="w-full bg-purple-700 text-white py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">OK</button>
+        </div>
+    </div>
+    <script src="resetemail.js"></script>
+</body>
+
+</html>
