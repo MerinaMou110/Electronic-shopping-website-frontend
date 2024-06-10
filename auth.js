@@ -22,7 +22,7 @@ function handleRegistration(event) {
         return;
     }
 
-    fetch('http://127.0.0.1:8000/api/user/register/', {
+    fetch('https://electronic-shopping-website-as07.onrender.com/api/user/register/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ async function handleLogin(event) {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/user/login/', {
+        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/login/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

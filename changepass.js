@@ -14,7 +14,7 @@ async function handleChangePassword(event) {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/user/changepassword/', {
+        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/changepassword/', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,

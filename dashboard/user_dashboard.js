@@ -12,7 +12,7 @@ async function fetchUserProfile() {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/user/profile/', {
+        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/profile/', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -51,7 +51,7 @@ async function handleProfileUpdate(event) {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/user/profile/', {
+        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/profile/', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

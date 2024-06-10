@@ -12,7 +12,7 @@ async function handleResetPassword(event) {
     const password = document.getElementById('password').value;
     const password2 = document.getElementById('password2').value;
 
-    const response = await fetch(`http://127.0.0.1:8000/api/user/reset-password/${uid}/${token}/`, {
+    const response = await fetch(`https://electronic-shopping-website-as07.onrender.com/api/user/reset-password/${uid}/${token}/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
