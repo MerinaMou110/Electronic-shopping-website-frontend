@@ -3,7 +3,7 @@ function logout() {
     const accessToken = localStorage.getItem('accessToken');
 
     if (refreshToken && accessToken) {
-        fetch('https://electronic-shopping-website-as07.onrender.com/user/logout/', {
+        fetch('https://electronic-shopping-website-as07.onrender.com/api/user/logout/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
