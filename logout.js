@@ -26,11 +26,16 @@ function logout() {
             } else {
                 response.json().then(data => {
                     console.error('Logout failed:', data);
+                    alert('Logout failed. Please try again.');
                 });
             }
         })
-        .catch(error => console.error('Error during logout:', error));
+        .catch(error => {
+            console.error('Error during logout:', error);
+            alert('An error occurred. Please try again.');
+        });
     } else {
         console.error('No refresh token or access token found.');
+        alert('You are not logged in.');
     }
 }

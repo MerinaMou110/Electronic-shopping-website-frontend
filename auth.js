@@ -1,3 +1,36 @@
+// Constants
+const INACTIVITY_TIMEOUT = 30 * 60 * 1000; // 30 minutes
+
+// Initialize timer variable
+let inactivityTimer;
+
+// Functions to handle user activity and inactivity
+function resetInactivityTimer() {
+    clearTimeout(inactivityTimer);
+    inactivityTimer = setTimeout(logoutDueToInactivity, INACTIVITY_TIMEOUT);
+}
+
+function logoutDueToInactivity() {
+    console.log('User is inactive for 30 minutes. Logging out...');
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('refreshToken');
+    localStorage.removeItem('role');
+    localStorage.removeItem('id');
+    // Optionally, redirect to login page
+    window.location.href = 'login.html';
+}
+
+// Event listeners for user activity
+window.onload = resetInactivityTimer;
+document.onmousemove = resetInactivityTimer;
+document.onkeypress = resetInactivityTimer;
+document.onclick = resetInactivityTimer;
+document.onscroll = resetInactivityTimer;
+document.onkeydown = resetInactivityTimer;
+
+
+
+
 document.getElementById('registrationForm').addEventListener('submit', handleRegistration);
 
 function handleRegistration(event) {
@@ -45,6 +78,8 @@ function handleRegistration(event) {
             successDiv.textContent = 'Registration successful. Please check your email to activate your account.';
             // Optionally clear the form
             document.getElementById('registrationForm').reset();
+            
+            window.location.href = 'login.html';
         }
     })
     .catch((error) => {
