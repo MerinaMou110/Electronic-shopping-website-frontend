@@ -1,3 +1,21 @@
+const getAuthToken = () => localStorage.getItem('accessToken');
+const getUserRole = () => localStorage.getItem('role');
+
+const text = () => {
+    const role = getUserRole();
+    if (role === 'admin') {
+        document.getElementById("title").innerText = "Welcome Admin Profile";
+    } else if (role === 'superadmin') {
+        document.getElementById("title").innerText = "Welcome Super Admin Profile";
+    } else {
+        document.getElementById("title").innerText = "Welcome User Profile";
+    }
+};
+
+// Call the function to set the title when the page loads
+document.addEventListener('DOMContentLoaded', text);
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch user information when the page loads
     fetchUserProfile();
@@ -12,7 +30,7 @@ async function fetchUserProfile() {
     }
 
     try {
-        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/profile/', {
+        const response = await fetch('http://127.0.0.1:8000/api/user/profile/', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -51,7 +69,7 @@ async function handleProfileUpdate(event) {
     }
 
     try {
-        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/profile/', {
+        const response = await fetch('http://127.0.0.1:8000/api/user/profile/', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -85,3 +103,7 @@ async function handleProfileUpdate(event) {
         messageDiv.classList.add('text-red-500');
     }
 }
+
+
+
+

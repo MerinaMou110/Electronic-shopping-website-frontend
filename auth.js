@@ -55,7 +55,7 @@ function handleRegistration(event) {
         return;
     }
 
-    fetch('https://electronic-shopping-website-as07.onrender.com/api/user/register/', {
+    fetch(' http://127.0.0.1:8000/api/user/register/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ async function handleLogin(event) {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://electronic-shopping-website-as07.onrender.com/api/user/login/', {
+        const response = await fetch('http://127.0.0.1:8000/api/user/login/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -124,15 +124,16 @@ async function handleLogin(event) {
             messageDiv.textContent = 'Login successful!';
             messageDiv.classList.remove('text-red-500');
             messageDiv.classList.add('text-green-500');
-
+            
+            window.location.href = '../dashboard/dashboard.html';
             // Redirect based on role
-            if (result.role === 'admin') {
-                window.location.href = '../dashboard/admin_dashboard.html';
-            } else if (result.role === 'superadmin') {
-                window.location.href = '../dashboard/superadmin_dashboard.html';
-            } else {
-                window.location.href = '../dashboard/user_dashboard.html';
-            }
+            // if (result.role === 'admin') {
+            //     window.location.href = '../dashboard/admin_dashboard.html';
+            // } else if (result.role === 'superadmin') {
+            //     window.location.href = '../dashboard/superadmin_dashboard.html';
+            // } else {
+            //     window.location.href = '../dashboard/user_dashboard.html';
+            // }
         } else {
             messageDiv.textContent = result.error || 'Login failed. Please try again.';
             messageDiv.classList.remove('text-green-500');

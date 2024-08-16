@@ -22,7 +22,7 @@ function logout() {
                 localStorage.removeItem('id');
 
                 // Redirect to the login page or any other desired page
-                window.location.href = 'login.html';
+                window.location.href = '/login.html';
             } else {
                 response.json().then(data => {
                     console.error('Logout failed:', data);

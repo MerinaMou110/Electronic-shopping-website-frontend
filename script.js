@@ -27,7 +27,7 @@ document.querySelectorAll('[data-accordion-target]').forEach(button => {
   document.addEventListener('DOMContentLoaded', function() {
     const access = localStorage.getItem('accessToken');
     const refresh = localStorage.getItem('refreshToken');
-    const role = localStorage.getItem('role');
+    // const role = localStorage.getItem('role');
 
     const profileLinkContainer = document.querySelector('#profileLinkContainer');
     const mobileProfileLinkContainer = document.querySelector('#mobileProfileLinkContainer');
@@ -43,13 +43,11 @@ document.querySelectorAll('[data-accordion-target]').forEach(button => {
         signupLink.style.display = 'none';
         logoutLink.style.display = 'block';
 
-        if (role === 'admin') {
-            profileLink = '<a href="../dashboard/admin_dashboard.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Admin Profile</a>';
-        } else if (role === 'superadmin') {
-            profileLink = '<a href="../dashboard/superadmin_dashboard.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Superadmin Profile</a>';
-        } else {
-            profileLink = '<a href="../dashboard/user_dashboard.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">User Profile</a>';
-        }
+        
+            profileLink = '<a href="/dashboard/dashboard.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Profile</a>';
+       
+           
+        
 
         profileLinkContainer.innerHTML = profileLink;
         mobileProfileLinkContainer.innerHTML = profileLink;

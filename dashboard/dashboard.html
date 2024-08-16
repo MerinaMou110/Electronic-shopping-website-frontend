@@ -25,7 +25,7 @@
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Home</span>
                     </a>
-                    <a href="../dashboard/user_dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+                    <a href="../dashboard/dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -34,7 +34,7 @@
                         Dashboard
                     </a>
                    
-                    <a href="../products/products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                    <a href="../products/crud_products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
                         <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
                             <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
                          </svg>
@@ -106,7 +106,7 @@
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Home</span>
                     </a>
-                    <a href="../dashboard/user_dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700" onclick="toggleMenu()">
+                    <a href="../dashboard/dashboard.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700" onclick="toggleMenu()">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -116,7 +116,7 @@
                     </a>
                     
                     
-                    <a href="../products/products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                    <a href="../products/crud_products.html" class="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
                         <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
                             <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
                          </svg>
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="p-4">
-                <h1 class="text-2xl font-bold text-center">Welcome to superadmin dashboard!</h1>
+                <h1 id="title" class="text-2xl font-bold text-center"></h1>
                 
             </div>
                 <!-- Profile Form -->
@@ -228,9 +228,17 @@
         </div>
     </div>
     
-    <script src="../dashboard/dashboard.js"></script>
+    
+        </div>
+
+        
+    </div>
+    
+    <script src="dashboard.js"></script>
     <script src="../logout.js"></script>
+   
     <script src="../auth.js"></script>
+    <script src="../products/crud_products.js"></script>
     <script src="../script.js"></script>
     <script>
         // Toggle mobile menu
@@ -241,12 +249,6 @@
 
         document.getElementById('menu-btn').addEventListener('click', toggleMenu);
     </script>
-        </div>
-
-        
-    </div>
-    
-
   
 </body>
 
